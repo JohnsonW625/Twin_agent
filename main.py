@@ -37,8 +37,7 @@ def create_twin_agent():
         yet approachable communication in your answers.""",
         verbose=True,
         allow_delegation=False,
-        tools=[FileReadTool(file_path='./information.txt')],  # Tool to read files
-        llm="openai/gpt-5-nano-2025-08-07" 
+        tools=[FileReadTool(file_path='./information.txt')]  # Tool to read files
     )
 
 
@@ -53,8 +52,7 @@ def create_writer_agent():
 
         verbose=True,
         allow_delegation=False,
-        tools=[FileWriterTool()],  # Tool to write files
-        llm="openai/gpt-5-nano-2025-08-07" 
+        tools=[FileWriterTool()]  # Tool to write files
     )
 
 
